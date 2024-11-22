@@ -12,7 +12,7 @@ torch = {version = "<2.5.0+cu124", source = "torch_cu124"}
 torchvision = {version = "<0.21.0+cu124", source = "torch_cu124"}
 torchaudio = {version = "<3.0.0+cu124", source = "torch_cu124"}
 xformers = {version = "<0.0.29+cu124", source = "torch_cu124"}
-diffusers = {version = "<0.31.0", extras = ["torch"]}
+diffusers = {version = "0.15.0", extras = ["torch"]}
 transformers = "^4.46.3"
 ipympl = "^0.9.4"
 jupyterlab = "^4.3.1"
