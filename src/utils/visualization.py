@@ -71,6 +71,7 @@ class Demo:
                         axes[i].axis('off')
                         axes[i].scatter(max_yx[1].item(), max_yx[0].item(), c='r', s=scatter_size)
                         axes[i].set_title('target image')
+                        axes[i].annotate(str(cos_map[i-1][max_yx]), (max_yx[1], max_yx[0]), color='r')
 
                     del cos_map
                     del heatmap
