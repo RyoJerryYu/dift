@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "dift"
+version = "0.1.0"
+description = ""
+authors = ["RyoJerryYu <tzl19961216@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = {version = "<2.5.0+cu124", source = "torch_cu124"}
+torchvision = {version = "<0.21.0+cu124", source = "torch_cu124"}
+torchaudio = {version = "<3.0.0+cu124", source = "torch_cu124"}
+xformers = {version = "<0.0.29+cu124", source = "torch_cu124"}
+diffusers = {version = "<0.31.0", extras = ["torch"]}
+transformers = "^4.46.3"
+ipympl = "^0.9.4"
+jupyterlab = "^4.3.1"
+matplotlib = "^3.9.2"
+
+[[tool.poetry.source]]
+name = "torch_cu124"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "supplemental"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
