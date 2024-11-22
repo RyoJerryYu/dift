@@ -17,6 +17,7 @@ transformers = "^4.46.3"
 ipympl = "^0.9.4"
 jupyterlab = "^4.3.1"
 matplotlib = "^3.9.2"
+huggingface-hub = "<0.26.0"
 
 [[tool.poetry.source]]
 name = "torch_cu124"
